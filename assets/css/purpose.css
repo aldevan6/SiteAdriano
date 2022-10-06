@@ -21560,8 +21560,8 @@ textarea[resize=horizontal] {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding-top: .75rem;
-    padding-bottom: .75rem
+    padding-top: 0.40rem;
+    padding-bottom: 0.40rem
 }
 
 .navbar-top .navbar-nav {
