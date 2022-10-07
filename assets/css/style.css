@@ -1,3 +1,10 @@
+.flex{
+    display: flex;
+    align-items: center;
+}
+.red {
+    color: #dc213c !important;
+}
 .social-media a{
     margin-right: 10px;
 }
@@ -66,17 +73,35 @@
 }
 .social-footer{
     display: flex;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .social-footer a{
     background: rgba(255, 255, 255, 0.1);
-    margin-right: 10px;
-    height: 50px;
-    width: 50px;
+    margin-right: 15px;
+    height: 45px;
+    width: 45px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .social-footer a:hover {
     background-color: #dc213c;
+}
+
+.body-copy{
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+
+.serivice-dropdown{
+    padding:10px;
+    min-width: 160px;
+    list-style: none;
+    position: absolute ;
+    top: 50px;
+    border-radius: 3px;
+    background-color: #fff;
+    margin-top: 30px;
+    box-shadow: 3px 3px 10px #aaa;
+    margin-left: 50px;
 }
