@@ -5341,7 +5341,7 @@ input[type=submit].btn-block {
     }
 
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 1rem;
+        padding-right: 10px; /**/
         padding-left: 1rem;
     }
 
@@ -5548,6 +5548,8 @@ input[type=submit].btn-block {
 }
 
 .navbar-dark .navbar-toggler-icon {
+    background-color: rgba(39, 52, 68, 0.5);
+
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.85)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")
 }
 
@@ -12769,7 +12771,7 @@ button.bg-white:hover {
 
     .ml-lg-auto,
     .mx-lg-auto {
-        margin-left: 30px !important /*Espaço entre cards footer*/
+        margin-left: 20px !important /*Espaço entre cards footer*/
     }
 }
 
@@ -21583,7 +21585,7 @@ textarea[resize=horizontal] {
 }
 
 .navbar-top .navbar-nav .nav-link {
-    padding: .5rem
+    padding: 0.2rem
 }
 
 @media (max-width:575.98px) {
@@ -21776,7 +21778,7 @@ textarea[resize=horizontal] {
         border-radius: 0;
         color: #3d3a4e !important; /*Cor dos itens de menu*/
         font-family: 'Frank Ruhl Libre', serif;
-        font-size: 15px;
+        font-size: 16px;
     }
         .navbar-expand-lg .navbar-nav .nav-link:hover{
             color: #7a768e !important;
