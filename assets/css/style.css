@@ -1,9 +1,82 @@
+.social-media a{
+    margin-right: 10px;
+}
 .social-media a i{
     color: #fff;
     font-size: 15px;
-    padding-right: 10px;
 }
 
 .social-media a i:hover{
     color: #ececec;
+}
+.nav-link--normal{
+    font-weight: 500 !important;
+}
+.endereco{
+    padding-top: 15px;
+    line-height: 40px;
+    font-weight: normal;
+}
+
+.footer-img{
+    margin-right: 15px;
+}
+.footer-text{
+    line-height: 28px;
+}
+.left{
+    display: flex;
+    margin-bottom: 14px;
+}
+.left p{
+    padding-left: 10px;
+}
+.text-footer-red{
+    color: #dc213c;
+}
+.square{
+    height: 8px;
+    width: 8px;
+    background-color: #dc213c;
+    margin-right: 10px;
+}
+
+.text-date{
+    display: flex;
+    align-items: center;
+}
+
+.line-bottom{
+    height: 1px;
+    width: 80px;
+    background-color: #dc213c;
+}
+
+.input-footer{
+    outline: none;
+    padding: 10px 5px;
+}
+
+.btn-form--footer{
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background-color: #dc213c;
+    border: none;
+}
+.social-footer{
+    display: flex;
+    margin-top: 20px;
+}
+.social-footer a{
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: 10px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-footer a:hover {
+    background-color: #dc213c;
 }
