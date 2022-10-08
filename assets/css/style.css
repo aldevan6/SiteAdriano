@@ -180,13 +180,29 @@
     .navbar-expand-lg .navbar-nav .nav-link{
         font-size: 13px !important;
     }
-}
-
-@media (min-width:426) and (max-width:1199px){
     
 }
 
+@media (min-width:426) and (max-width:1199px){
+    .footer-gir{
+        display: grid;
+    }
+}
+
+@media (max-width:991px) {
+    .btn-agenda {
+            display: none;
+        }
+        .footer-form{
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            min-width: 300px;
+        }
+}
+
 @media (max-width: 425px){
+    
     .row {
         display: flex;
         flex-wrap: wrap;
