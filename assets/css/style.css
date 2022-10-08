@@ -156,4 +156,48 @@
     display: flex;
     
 }
+.btn-agenda{
+    color: #fff;
+    padding: 14px 10px;
+    border-radius: 3px;
+    background-color: #162541;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.btn-agenda:hover{
+    color: #eee;
+    transition:all 80deg ;
+    background-color: #dc213c;
+}
 
+@media (min-width:991px) and (max-width: 1199.90px ){
+    .btn-agenda{
+        display: inline-block;
+        padding: 10px 10px;
+        font-size: 9px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link{
+        font-size: 13px !important;
+    }
+}
+
+@media (min-width:426) and (max-width:1199px){
+    
+}
+
+@media (max-width: 425px){
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .col-6 {
+        flex: 0 0 50% !important;
+        max-width: none !important;
+    }
+    .grid-footer{
+        display: grid;
+        justify-content: center;
+    }
+}

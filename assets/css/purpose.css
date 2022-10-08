@@ -5341,8 +5341,8 @@ input[type=submit].btn-block {
     }
 
     .navbar-expand-lg .navbar-nav .nav-link {
-        padding-right: 10px; /**/
-        padding-left: 1rem;
+        padding-right: 0.7rem; /*menu de navegacao header*/
+        padding-left: 0.7rem;
     }
 
     .navbar-expand-lg>.container,
@@ -5356,7 +5356,8 @@ input[type=submit].btn-block {
         display: -ms-flexbox !important;
         display: flex !important;
         -ms-flex-preferred-size: auto;
-        flex-basis: auto
+        flex-basis: auto;
+        justify-content: space-between; /*Ajuste itens menu*/
     }
 
     .navbar-expand-lg .navbar-toggler {
@@ -8206,9 +8207,9 @@ button.bg-white:hover {
 }
 
 @media (min-width:992px) {
-    .d-lg-none {
+    /* .d-lg-none {
         display: none !important
-    }
+    } */
 
     .d-lg-inline {
         display: inline !important
@@ -20661,7 +20662,7 @@ textarea[resize=horizontal] {
 
 .icon-floating:nth-child(6) {
     top: 200px;
-    left: 1120px;
+    left: 1087px;
     width: 80px;
     height: 80px;
     -webkit-animation-delay: 2.5s;
@@ -21778,7 +21779,7 @@ textarea[resize=horizontal] {
         border-radius: 0;
         color: #3d3a4e !important; /*Cor dos itens de menu*/
         font-family: 'Frank Ruhl Libre', serif;
-        font-size: 16px;
+        font-size: 16px; /*Fonte dos itens de menu*/
     }
         .navbar-expand-lg .navbar-nav .nav-link:hover{
             color: #7a768e !important;
