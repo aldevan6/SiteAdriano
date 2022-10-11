@@ -268,3 +268,13 @@
         justify-content: center;
     }
 }
+
+.btn-topo{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    height: 50px;
+    width: 50px;
+    background-color: #3d3a4e;
+    z-index: 999;
+}

@@ -1,3 +1,4 @@
+let btnTopo = document.querySelector('btn-topo');
 // Animação do menu
 let navbarTop = document.querySelector('.navbar-top');
 let header = document.querySelector('header');
@@ -13,3 +14,6 @@ window.addEventListener('scroll', ()=>{
 });
 
 // Fim animação do menu
+
+
+
