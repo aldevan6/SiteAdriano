@@ -156,7 +156,7 @@
     display: flex;
     
 }
-.btn-agenda{
+/* .btn-agenda{
     color: #fff;
     padding: 14px 10px;
     border-radius: 3px;
@@ -164,18 +164,69 @@
     font-size: 14px;
     text-decoration: none;
     text-transform: uppercase;
+    font-weight: 500;
 }
 .btn-agenda:hover{
     color: #eee;
     transition:all 80deg ;
     background-color: #dc213c;
+} */
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    padding: 10px;
+    background: #3d3a4e;
+    background-size: 400%;
+    border: none;
+    font-weight: 500;
 }
 
+.button:hover::before {
+    transform: scaleX(1);
+    color: #fff;
+}
+
+.button-content {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+}
+.button-content:hover{
+    color: #fff;
+}
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(82.3deg,
+            #db213c 100%,
+            transparent 2%);
+    transition: all 0.5s;
+}
+/* Animações */
+@keyframes animate-header{
+    0%{margin-top: -150px;}
+    100%{margin-top: -47px;}
+}
+.anime-header{
+    margin-top: -47px;
+    animation-name: animate-header;
+    animation-duration: 1s;
+}
+
+
 @media (min-width:991px) and (max-width: 1199.90px ){
-    .btn-agenda{
+    .button{
         display: inline-block;
         padding: 10px 10px;
-        font-size: 9px;
+        font-size: 12px;
     }
     .navbar-expand-lg .navbar-nav .nav-link{
         font-size: 13px !important;
@@ -190,7 +241,7 @@
 }
 
 @media (max-width:991px) {
-    .btn-agenda {
+    .button {
             display: none;
         }
         .footer-form{
