@@ -199,6 +199,16 @@
 header{
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
 }
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+.footer-grid--contato{
+    padding-right: 20px;
+}
+
 /* Animações */
 @keyframes animate-header{
     0%{margin-top: -150px;}
@@ -210,6 +220,16 @@ header{
     animation-duration: 1s;
 }
 
+@media (min-width: 425px) and (max-width: 632px){
+    .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    .input-footer{
+        width: 85%;
+    }
+}
 
 @media (min-width:991px) and (max-width: 1199.90px ){
     .button{
@@ -227,7 +247,7 @@ header{
 }
 
 @media (min-width:426) and (max-width:1199px){
-    .footer-gir{
+    .footer-grid{
         display: grid;
     }
 }
@@ -239,7 +259,6 @@ header{
         .footer-form{
             display: flex;
             flex-direction: column;
-            margin: auto;
             min-width: 300px;
         }
         /* Botão mobile */
@@ -300,19 +319,13 @@ header{
 }
 
 @media (max-width: 425px){
-    
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-    .col-6 {
-        flex: 0 0 50% !important;
-        max-width: none !important;
-    }
-    .grid-footer{
-        display: grid;
-        justify-content: center;
+    .footer-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+    .input-footer{
+        width: 80%;
     }
 }
 
@@ -336,4 +349,5 @@ header{
 .btn-topo:hover{
     background-color: #3c4858;
 }
+
 
