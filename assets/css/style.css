@@ -156,21 +156,7 @@
     display: flex;
     
 }
-/* .btn-agenda{
-    color: #fff;
-    padding: 14px 10px;
-    border-radius: 3px;
-    background-color: #162541;
-    font-size: 14px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-.btn-agenda:hover{
-    color: #eee;
-    transition:all 80deg ;
-    background-color: #dc213c;
-} */
+
 .button {
     position: relative;
     overflow: hidden;
@@ -210,6 +196,9 @@
             transparent 2%);
     transition: all 0.5s;
 }
+header{
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+}
 /* Animações */
 @keyframes animate-header{
     0%{margin-top: -150px;}
@@ -230,6 +219,9 @@
     }
     .navbar-expand-lg .navbar-nav .nav-link{
         font-size: 13px !important;
+    }
+    .nav-item{
+        line-height: 1 !important;
     }
     
 }
@@ -270,11 +262,22 @@
 }
 
 .btn-topo{
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
     right: 20px;
-    bottom: 20px;
+    bottom: 100px;
     height: 50px;
     width: 50px;
-    background-color: #3d3a4e;
-    z-index: 999;
+    background-color: #db213c;
+    z-index: 100;
+    transition: all ease 0.5s;
+    color: #fff;
+}
+.btn-topo i{
+    font-size: 25px;
+}
+.btn-topo:hover{
+    background-color: #3c4858;
 }
