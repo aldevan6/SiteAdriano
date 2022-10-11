@@ -16373,7 +16373,8 @@ a.text-muted:hover {
 }
 
 .lh-150 {
-    line-height: 1.5 !important
+    line-height: 1.5 !important;
+    padding-top: 50px;
 }
 
 .lh-160 {
@@ -21007,6 +21008,7 @@ textarea[resize=horizontal] {
 }
 
 .mask-body {
+    display: none;
     position: fixed;
     top: 0;
     left: 0;

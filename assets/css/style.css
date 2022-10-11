@@ -242,6 +242,61 @@ header{
             margin: auto;
             min-width: 300px;
         }
+        /* Botão mobile */
+        input[type="checkbox"] {
+            display: none;
+            visibility: hidden;
+        }
+
+        .bar {
+            position: relative;
+            cursor: pointer;
+            width: 50px;
+            height: 35px;
+        }
+
+        .bar span {
+            position: absolute;
+            width: 45px;
+            height: 7px;
+            background: red;
+            border-radius: 100px;
+            display: inline-block;
+            transition: 0.3s ease;
+            left: 0;
+        }
+
+        .bar span.top {
+            top: 0;
+        }
+
+        .bar span.middle {
+            top: 17px;
+        }
+
+        .bar span.bottom {
+            bottom: 0;
+        }
+
+        input[type]:checked~span.top {
+            transform: rotate(45deg);
+            transform-origin: top left;
+            width: 48px;
+            left: 5px;
+        }
+
+        input[type]:checked~span.bottom {
+            transform: rotate(-45deg);
+            transform-origin: top left;
+            width: 48px;
+            bottom: -6px;
+            box-shadow: 0 0 10px #495057;
+        }
+
+        input[type]:checked~span.middle {
+            transform: translateX(-20px);
+            opacity: 0;
+        }
 }
 
 @media (max-width: 425px){
@@ -281,3 +336,4 @@ header{
 .btn-topo:hover{
     background-color: #3c4858;
 }
+
